@@ -1,0 +1,7 @@
+CASE | PREVIOUS MODE | PERCEPT | TARGET | OUTCOME
+repeated cold percept 1 | OFF | temperature=17.0°C, occupied=True | HEAT | SEND COMMAND
+repeated cold percept 2 | HEAT | temperature=17.0°C, occupied=True | HEAT | NO COMMAND
+lower exact boundary | HEAT | temperature=18.0°C, occupied=True | OFF | SEND COMMAND
+upper exact boundary | OFF | temperature=26.0°C, occupied=True | OFF | NO COMMAND
+mode transition | OFF | temperature=27.0°C, occupied=True | COOL | SEND COMMAND
+empty room | COOL | temperature=30.0°C, occupied=False | OFF | SEND COMMAND
